@@ -1,9 +1,6 @@
+# Basic Commands of GitHub
 
-# First Contributions
-
-This project aims to simplify and guide the way beginners make their first contribution. If you are looking to make your first contribution, follow the steps below.
-
-_If you're not comfortable with command line, [here are tutorials using GUI tools.](#tutorials-using-other-tools)_
+This repository aims to guide the way CCEW, Pune's students make their first contribution in hacktoberfest. If you are looking to make your first contribution, follow the steps below.
 
 <img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/fork.png" alt="fork this repository" />
 
@@ -102,4 +99,4 @@ Now submit the pull request.
 
 <img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/submit-pull-request.png" alt="submit pull request" />
 
-Soon I'll be merging all your changes into the master branch of this project. You will get a notification email once the changes have been merged.
+Soon we'll be merging all your changes into the master branch of this repository. You will get a notification email once the changes have been merged.
