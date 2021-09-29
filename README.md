@@ -1,5 +1,7 @@
 # Hacktoberfest_Moz_Cummins
 ![Untitled design](https://user-images.githubusercontent.com/81237390/135243697-e146e49e-2b66-42b5-b65b-6e9ad90cf8d5.jpg)
+![Campus Club CCEW](https://user-images.githubusercontent.com/81237390/135248868-511be515-73db-41cc-ab03-d95649111a92.jpg)
+
 
 ## **About us**
 
