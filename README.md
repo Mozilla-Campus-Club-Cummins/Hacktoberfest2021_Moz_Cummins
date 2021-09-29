@@ -1,4 +1,6 @@
 # Hacktoberfest_Moz_Cummins
+![Untitled design](https://user-images.githubusercontent.com/81237390/135243697-e146e49e-2b66-42b5-b65b-6e9ad90cf8d5.jpg)
+
 ## **About us**
 
 Mozilla Campus Club CCEW is a student committee working to spread awareness on Open Source software. We organize webinars and workshops on different technical topics and making Open Source contributions.
