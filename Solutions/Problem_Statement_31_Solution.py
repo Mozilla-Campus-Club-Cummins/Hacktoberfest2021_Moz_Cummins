@@ -14,6 +14,7 @@ for word in string:
         print(word,end=" ")
 
 
+
 """
 Output cases:
           
