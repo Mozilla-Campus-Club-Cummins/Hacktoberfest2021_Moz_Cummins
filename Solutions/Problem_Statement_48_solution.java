@@ -4,8 +4,7 @@ import java.util.Scanner;
 public class Problem_Statement_48_solution {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int n = 0;
-        n=sc.nextInt();
+        int n = 5;//Only for 5 points given in problem
         int x[]=new int[n];//Array of elements of x coordinate
         int y[]=new int[n];//Array of y coordinate
 
