@@ -39,6 +39,10 @@ int main()
   int target;
   cin>>num;
   cin>>target;
-  addOperators(num,target);
+  vector<string>res= addOperators(num,target);
+  for(int i=0;i<res.size();i++)
+  {
+      cout<<res[i]<<" ";
+  }
   return 0;
 }
