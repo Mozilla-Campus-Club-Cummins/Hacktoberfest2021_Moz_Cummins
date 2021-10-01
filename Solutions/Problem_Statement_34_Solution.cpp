@@ -9,39 +9,41 @@ eat exactly one candy and exactly one orange from this gift (decrease both ai an
 
 #include <bits/stdc++.h>
 using namespace std;
-int a[55], b[55], n;
+
 //ai is the number of candies in the i-th gift
 //bi is the number of oranges in the i-th gift
 //here n is number of gifts
 
 int main()
 {
+    int a[100], b[100], n;
 	int t;
 	cin >> t;
-  //input the number of testcases
+    	//input the number of testcases
 	while(t--)
 	{
 		cin >> n;
-		int mina = 0x3f3f3f3f, minb = 0x3f3f3f3f;
-		long long ans = 0;
+		int minOfA = INT_MAX, minOfB = INT_MAX;
+		long long minMoves = 0;
 		for(int i = 1; i <= n; i++)
 		{
 			cin >> a[i];
-			mina = min(mina, a[i]);
+			minOfA = min(minOfA, a[i]);
 		}	
 		for(int i = 1; i <= n; i++)
 		{
 			cin >> b[i];
-			minb = min(minb, b[i]);
+			minOfB = min(minOfB, b[i]);
 		}
 		for(int i = 1; i <= n; i++)
 		{
-			ans += 1ll * max(a[i] - mina, b[i] - minb);
+			minMoves += 1ll * max(a[i] - minOfA, b[i] - minOfB);
 		}
-		cout << ans << endl;
+		cout << minMoves << endl;
 	}
 	return 0;
 }
+
 
 /*
 
