@@ -10,8 +10,6 @@ eat exactly one candy and exactly one orange from this gift (decrease both ai an
 #include <bits/stdc++.h>
 using namespace std;
 
-
-
 int main()
 {
 	//ai is the number of candies in the i-th gift
