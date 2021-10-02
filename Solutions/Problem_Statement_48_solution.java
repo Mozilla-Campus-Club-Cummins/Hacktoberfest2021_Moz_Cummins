@@ -8,12 +8,10 @@ public class Problem_Statement_48_solution {
         int x[]=new int[n];//Array of elements of x coordinate
         int y[]=new int[n];//Array of y coordinate
 
-        //Accepting the x coordinates
+        //Accepting the x & y coordinates
         for(int i=0;i<x.length;i++){
+            System.out.println("Enter the coordinate of x and y of Point "+(i+1));
             x[i]=sc.nextInt();
-        }
-        //Accepting the y coordinates
-        for(int i=0;i<y.length;i++){
             y[i]=sc.nextInt();
         }
 
@@ -40,6 +38,8 @@ public class Problem_Statement_48_solution {
         float m=SUMUp/SUMdown;
         float c=Y-m*X;
         //Printing line of best fit
+        System.out.println("-----------------------------------");
         System.out.println("Line of Best Fit is y="+m+"x+"+c);
+        System.out.println("-----------------------------------");
     }
 }
