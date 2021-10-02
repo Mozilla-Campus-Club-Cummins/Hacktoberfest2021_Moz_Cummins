@@ -32,6 +32,6 @@ public class Problem_Statement_54_Solution {
 5
 4
 3
-12
+Remaining Stones = 12
 
 */
