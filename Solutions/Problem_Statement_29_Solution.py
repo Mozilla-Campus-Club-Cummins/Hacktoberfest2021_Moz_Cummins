@@ -16,7 +16,7 @@ INT_MIN = -sys.maxsize
 # cuttingWire returns the best obtainable price for a wire of length n and
 # price[] as prices of different pieces taken from the user
 def cuttingWire(price, n):
-    
+
     # val maintains the maximum price for every prossible length of the wire
 	val = [0 for x in range(n+1)]
 
@@ -24,7 +24,7 @@ def cuttingWire(price, n):
 	val[0] = 0
 
 	# Build the list val[] in bottom up manner and return
-	# the last entry from the table
+	# the last entry from the list
 	for i in range(1, n+1):
 		max_val = INT_MIN
 		for j in range(i):
