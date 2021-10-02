@@ -4,7 +4,6 @@
                           when more than one word is present. """
 
 
-
 string=input("Enter String:")
 string=string.split()
 for word in string:
@@ -31,3 +30,4 @@ Enter String:My name is Mahevash Patel
 My name is hsavehaM letaP 
 
  """
+
