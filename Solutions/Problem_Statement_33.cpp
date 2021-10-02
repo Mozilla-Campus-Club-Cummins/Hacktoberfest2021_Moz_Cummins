@@ -32,25 +32,15 @@ bool isCube(int N)
 
 int main()
 {
-    // Total test cases
-    int T;
-    cin >> T;
-    cout << endl;
+    // Take a number as an input
+    int N;
+    cin >> N;
 
-    while (T--)
-    {
-        // Take a number as an input
-        int N;
-        cin >> N;
-
-        // If the sum of the cubes is equal to the number
-        if (isCube(N))
-            cout << "Yes\n";
-        else
-            cout << "No\n";
-
-        cout << endl;
-    }
+    // If the sum of the cubes is equal to the number
+    if (isCube(N))
+        cout << "Yes\n";
+    else
+        cout << "No\n";
 
     return 0;
 }
@@ -58,8 +48,6 @@ int main()
 /* ---------------------------------------------------------------------------------------------------------------------------
  
   output
-
-    7
 
     0 
     Yes
@@ -81,6 +69,4 @@ int main()
 
     1006 
     No
-
-
   --------------------------------------------------------------------------------------------------------------------------- */
