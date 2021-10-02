@@ -7,7 +7,7 @@ Cummins College of Engineering for Women Pune
 
 import java.util.*;
 import java.io.*;
-public class Problem_Statement_22
+public class Problem_Statement_22_Solution
 {
 	public static void main (String args[]) throws IOException
 	{
