@@ -1,0 +1,16 @@
+'''Given a string of arbitary lengthwith any ascii characters. Write a function to determine whether the string contains the whole word
+"Cummins". The order of characters is important-a string "abcCuminsdef" is correct but "abcnCumissefm" is not correct.
+Upper or lower case letter does not matter - "cUmMinS" is also correct.
+Return value as boolean values, true for the string to contains "Cummins", false for it does not.'''
+
+def check_substring():                              #Function to determine if entered string contains "Cummins" substring
+    str1="Cummins"                                  #predefined string
+    str2=input("Enter the string:")                 #Accepting string from the user
+    str3=str2.lower()
+    str3=str3.replace("c","C")
+    if(str1 in str3):                               #Checking if the predefined string str1 is a substring of string enterd by user
+        return True
+    else:
+        return False
+ans=check_substring()
+print(ans)
