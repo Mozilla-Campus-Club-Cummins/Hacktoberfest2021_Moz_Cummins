@@ -1,0 +1,23 @@
+//count the frequency of each letter in a word
+import java.util.*;
+public class frequency
+{
+    public static void main()
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter a word");
+        String s= sc.next();
+        int c=0;
+        for(char i='a';i<='z';i++)
+        {
+            c=0;
+            for(int j=0;j<s.length();j++)
+            {
+                if(i==s.charAt(j))
+                c++;
+            }
+            if(c>=1)
+            System.out.println(i+" - "+c);
+        }
+    }
+}
