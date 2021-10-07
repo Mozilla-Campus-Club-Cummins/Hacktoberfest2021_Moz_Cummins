@@ -48,19 +48,16 @@ int main(void)
 	int mod = 0 ;
 	int result = 0 ;
 
-	cout << "Enter the size of array : " << endl ;
 	cin >> n ;
 
 	nums = new int[n] ;
 
 	//Take nums array as input
-	cout << "Enter the elements of array : " << endl ;
 	for(i=0 ; i<n ; ++i)
 	{
 		cin >> nums[i];
 	}
 
-	cout << "Enter the number of requests : " << endl ;
 	cin >> r ;
 
 	requests = new int*[r] ;
@@ -72,7 +69,6 @@ int main(void)
 	}
 
 	//Take each request as input(2-d array of size nx2)
-	cout << "Enter the start & end index of each request : "<< endl ;
 	for(i=0 ; i<r ; ++i)
 	{
 		for(j=0; j<2 ; ++j)
@@ -116,7 +112,10 @@ int main(void)
 	mod = pow(10, 9) + 7 ;
 	result = sum % mod ;
 
-	cout << "Maximum total sum among all possible array permutations is : " << result ;
+	cout << result ;
+
+	delete[] nums ;
+	delete[] count ;
 
 	return 0 ;
 }
