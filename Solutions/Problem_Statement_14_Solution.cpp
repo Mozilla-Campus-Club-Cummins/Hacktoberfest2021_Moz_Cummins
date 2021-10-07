@@ -25,7 +25,6 @@ exists a loop.*/
 3.If they meet( are equal) there is a cycle
 */
 
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -41,12 +40,12 @@ struct Node
     }
 };
 
-void loopHere(Node* head, Node* tail, int position)
+void loop(Node* head, Node* tail, int x)
 {
-    if(position==0) return;
+    if(x==0||x<0) return;
 
     Node* walk = head;
-    for(int i=1; i<position; i++)
+    for(int i=1; i<x; i++)
         walk = walk->next;
     tail->next = walk;
 }
@@ -69,35 +68,36 @@ public:
 
 int main()
 {
-    int t;
-    cin>>t;
-    while(t--)
-    {
-        int n, num;
+        int n, first_ele,num;
+        cout<<"Enter the length of linked list";
         cin>>n;
 
         Node *head, *tail;
-        cin>> num;
-        head = tail = new Node(num);
+        cout<<"Enter the first data element";
+        cin>> first_ele;
+        head = tail = new Node(first_ele);
 
         for(int i=0 ; i<n-1 ; i++)
-        {
+        {   cout<< "Enter next element"<<endl;
             cin>> num;
             tail->next = new Node(num);
             tail = tail->next;
         }
 
-        int pos;
-        cin>> pos;
-        loopHere(head,tail,pos);
+        int x;
+        cout<<"Enter x value"<<endl;
+        cin>> x;
+        loop(head,tail,x);
 
         Solution ob;
-        if(ob.detectLoop(head) )
+        if(ob.isloop(head) )
             cout<< "True\n";
         else
             cout<< "False\n";
-    }
+    
 	return 0;
 }
 
-  // } Driver Code Ends
+
+
+
