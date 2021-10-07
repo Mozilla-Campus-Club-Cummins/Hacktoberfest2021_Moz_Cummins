@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Activity page</title>
+    <link rel="stylesheet" href="activity.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4dca118252.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+      <!-- Navbar (sit on top) -->
+    <div class="w3-top" >
+        <!--<div class="w3-bar w3-white w3-card" id="myNavbar">-->
+          <div class="navbar">
+           <div href="#home" class="w3-bar-item w3-button w3-wide" ></div>
+           <!-- Right-sided navbar links -->
+           <img src="/images/logo.jpg" alt="Table Setting" width="150px" height="38px"></a><div class="w3-right w3-hide-small">
+             <a href="home.html" class="w3-bar-item w3-button"><i class="fas fa-eject"></i> ABOUT US</a>
+             <a href="activity.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ACTIVITIES</a>
+             <a href="schedule.html" class="w3-bar-item w3-button"><i class="fas fa-calendar-alt"></i> SCHEDULE</a>
+             <a href="contact.html" class="w3-bar-item w3-button"><i class="fas fa-id-card"></i> CONTACT US</a>
+           </div>
+           <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+       
+           <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+             <i class="fa fa-bars"></i>
+           </a>
+         </div>
+       </div>
+       
+       <!-- Sidebar on small screens when clicking the menu icon -->
+       <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+         <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+         <a href="activity.html" onclick="w3_close()" class="w3-bar-item w3-button">ACTIVITIES</a>
+         <a href="schedule.html" onclick="w3_close()" class="w3-bar-item w3-button">SCHEDULE</a>
+         <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+       </nav>
+       
+      <section class="teams" id="teams">
+          <div class="max-width">
+             <h2 class="title">ACTIVITIES</h2>
+             <div class="carousel owl-carousel">
+             <div class="card" >
+                <div class="box">
+                <img src="images/activity_1.png" alt="">
+                <div class="text">Hacktoberfest with Mozilla Campus Club</div>
+                <p>On the occasion of Hacktoberfest starting from 1st October, a month-long celebration of open source software Mozilla Campus Club is providing a great opportunity for students to improve their competitive coding skills and also to start making open source contributions and get a chance of working in a community.</p>
+              </div>
+            </div>
+            <div class="card" >
+              <div class="box">
+              <img src="images/activity_2.png" alt="">
+              <div class="text">Introduction to Git and GitHub</div>
+              <p><p> The session will include an introduction to Git & GitHub and a hands-on session explaining basic git commands and the use of GitHub platform while making open source contributions and projects.</p>
+            </div>
+          </div>
+          <div class="card" >
+            <div class="box">
+            <img src="images/activity_3.png" alt="">
+            <div class="text">Getting Started with Open Source</div>
+            <p><p>This webinar was conducted by Mr. Prathamesh Chavan, where he guided us on how one can get started with making contributions in both technical and non-technical fields. This beginner-friendly session also covered the ways to explore open-source with Mozilla and other great opportunities.</p>
+          </div>
+        </div>
+        <div class="card" >
+          <div class="box">
+          <img src="images/activity_4.png" alt="">
+          <div class="text">Session on Web Development</div>
+          <p><p>The speaker for this session was Ankitkumar Singh. The speaker promoted open-source software development. In this session, he guided students on how to get started with web development..</p>
+        </div>
+      </div>
+      <div class="card" >
+        <div class="box">
+        <img src="images/activity_5.png" alt="">
+        <div class="text">Workshop on ML and AI in open source
+        </div>
+        <p><p>Provided a great opportunity to learn about important topics for ML enthusiasts, the track of Machine Learning and Artificial Intelligence in open source technologies and to learn about the latest Mozilla speech to text recognition technology ..</p>
+      </div>
+    </div>
+          </div>
+        </div>
+
+
+</section>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="home.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.instagram.com/aicvs/" class="text-light"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/cummins-aicvs/mycompany/" class="text-light"><i class="fab fa-linkedin"></i></a>
+      <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZfSZGZDtVjPdkFkJqCQJXMjjcqxVrGvJffFvBTRKNPGcmXMlQxctgbpgdCrfKFfjsJCHL" class="text-light"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+      <a href="https://www.twitter.com/aicvs" class="text-light"><i class="fab fa-twitter"></i></a>
+      <a href="https://youtube.com/channel/UCYkmq4s5ciIau6BFI97XJlA" class="text-light"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+   
+
+        <script src="activity.js"></script>
+  </body>
+</html>
