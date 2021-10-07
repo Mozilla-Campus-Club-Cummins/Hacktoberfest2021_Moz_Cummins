@@ -51,9 +51,9 @@ public class Problem_Statement_81_Solution {
 		Scanner sc = new Scanner(System.in);
 		
 		//Accepting input data from user
-		System.out.println("Enter n : ");
+		
 		int m = sc.nextInt();    
-		System.out.println("Enter array size : ");
+		
 		int n = sc.nextInt();
 		int arr[] = new int[n];
 		
