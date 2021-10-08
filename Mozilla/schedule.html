@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<title>Mozilla Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="schedule.css">
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top" >
+     <!--<div class="w3-bar w3-white w3-card" id="myNavbar">-->
+       <div class="navbar">
+        <div href="#home" class="w3-bar-item w3-button w3-wide" ></div>
+        <!-- Right-sided navbar links -->
+        <img src="/images/logo.jpg" alt="Table Setting" width="150px" height="38px"></a><div class="w3-right w3-hide-small">
+          <a href="home.html" class="w3-bar-item w3-button"><i class="fas fa-eject"></i> ABOUT US</a>
+          <a href="activity.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ACTIVITIES</a>
+          <a href="schedule.html" class="w3-bar-item w3-button"><i class="fas fa-calendar-alt"></i> SCHEDULE</a>
+          <a href="contact.html" class="w3-bar-item w3-button"><i class="fas fa-id-card"></i> CONTACT US</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+      <a href="activity.html" onclick="w3_close()" class="w3-bar-item w3-button">ACTIVITIES</a>
+      <a href="schedule.html" onclick="w3_close()" class="w3-bar-item w3-button">SCHEDULE</a>
+      <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+    </nav>
+    
+    <br><br>
+   
+    <div class="timeline">
+        <div class="container left">
+          <div class="date">15 Dec</div>
+          <i class="icon fa fa-home"></i>
+          <div class="content">
+            <h2><strong>Schedule 1</strong></h2>
+            <p>
+              Description ---------------------------------------
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="date">22 Oct</div>
+          <i class="icon fa fa-gift"></i>
+          <div class="content">
+            <h2><strong>Schedule 2</strong></h2>
+            <p>
+                Description ---------------------------------------
+            </p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="date">10 Jul</div>
+          <i class="icon fa fa-user"></i>
+          <div class="content">
+            <h2><strong>Schedule 3</strong></h2>
+            <p>
+                Description ---------------------------------------
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="date">18 May</div>
+          <i class="icon fa fa-running"></i>
+          <div class="content">
+            <h2><strong>Schedule 4</strong></h2>
+            <p>
+                Description ---------------------------------------
+            </p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="date">10 Feb</div>
+          <i class="icon fa fa-cog"></i>
+          <div class="content">
+            <h2><strong>Schedule 5</strong></h2>
+            <p>
+                Description ---------------------------------------
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="date">01 Jan</div>
+          <i class="icon fa fa-certificate"></i>
+          <div class="content">
+            <h2><strong>Schedule 6</strong></h2>
+            <p>
+                Description ---------------------------------------
+            </p>
+          </div>
+        </div>
+      </div>
+      
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="home.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.instagram.com/aicvs/" class="text-light"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/cummins-aicvs/mycompany/" class="text-light"><i class="fab fa-linkedin"></i></a>
+      <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZfSZGZDtVjPdkFkJqCQJXMjjcqxVrGvJffFvBTRKNPGcmXMlQxctgbpgdCrfKFfjsJCHL" class="text-light"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+      <a href="https://www.twitter.com/aicvs" class="text-light"><i class="fab fa-twitter"></i></a>
+      <a href="https://youtube.com/channel/UCYkmq4s5ciIau6BFI97XJlA" class="text-light"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+   
+   
+
+</body>
+
+</html>
