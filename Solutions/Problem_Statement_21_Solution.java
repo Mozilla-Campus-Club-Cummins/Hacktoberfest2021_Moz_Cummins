@@ -48,7 +48,7 @@ public class Problem_Statement_21_Solution
 		    	//if value of flag is found to be 1 then print the 
 		    	//occurence of element at (j)th position of string str
 		    	
-		         System.out.print(str.charAt(j)+"="+counter[str.charAt(j)]);
+		         System.out.print(str.charAt(j)+"="+counter[str.charAt(j)]+" ");
 		        
 		     }
 	    }
