@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Page</title>
+  <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+  
+  <script src="https://kit.fontawesome.com/2afbe46fee.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top" >
+      <!--<div class="w3-bar w3-white w3-card" id="myNavbar">-->
+        <div class="navbar">
+         <div href="#home" class="w3-bar-item w3-button w3-wide" ></div>
+         <!-- Right-sided navbar links -->
+         <img src="/images/logo.jpg" alt="Table Setting" width="150px" height="38px"></a><div class="w3-right w3-hide-small">
+           <a href="home.html" class="w3-bar-item w3-button"><i class="fas fa-eject"></i> ABOUT US</a>
+           <a href="activity.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ACTIVITIES</a>
+           <a href="schedule.html" class="w3-bar-item w3-button"><i class="fas fa-calendar-alt"></i> SCHEDULE</a>
+           <a href="contact.html" class="w3-bar-item w3-button"><i class="fas fa-id-card"></i> CONTACT US</a>
+         </div>
+         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+     
+         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+           <i class="fa fa-bars"></i>
+         </a>
+       </div>
+     </div>
+     
+     <!-- Sidebar on small screens when clicking the menu icon -->
+     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+       <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+       <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+       <a href="activity.html" onclick="w3_close()" class="w3-bar-item w3-button">ACTIVITIES</a>
+       <a href="schedule.html" onclick="w3_close()" class="w3-bar-item w3-button">SCHEDULE</a>
+       <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+     </nav>
+     
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <div class="contact-content">
+                <div class="column left">
+                <div class="title">Contact us</div>
+                <img class="mail" src="images/mail.png" alt="">
+                <div class="icons">
+                   <div class="row">
+
+                     <div class="info">
+                       <div class="head"><b></b></div>
+                       <div class="sub-title"></div>
+                     </div>
+                     </div>
+                     <div class="row">
+
+                       <div class="info">
+                         <div class="head"><b></b></div>
+                         <div class="sub-title"></div>
+                       </div>
+                     </div>
+                       <div class="row">
+                         <div class="info">
+                           <div class="head"><b></b></div>
+                           <div class="sub-title"></div>
+                         </div>
+                  </div>
+             </div>
+         </div>
+         <div class="column right">
+           <div class="text">Message me</div>
+           <form id="form" action="javascript:sendmail()" method="post">
+             <div class="fields">
+             <div class="field name">
+               <input type="text" id="Name" placeholder="Full Name" required>
+             </div>
+             <div class="field email">
+               <input type="email" id="Email" placeholder="Email" required>
+             </div>
+           </div>
+           <div class="field">
+             <input type="text" id="Subject" placeholder="Subject" required>
+           </div>
+           <div class="field">
+             <input type="text" id="Query" placeholder="Query" required>
+           </div>
+           <div class="field textarea">
+             <textarea cols="30" rows="10" id="Message" placeholder="Message"></textarea>
+           </div>
+           <div class="button">
+             <button type="submit" onclick="sendmail()">Send message</button>
+             <span id="load"></span>
+           </div>
+         </form>
+         </div>
+      </div>
+ </div>
+</section>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="home.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.instagram.com/aicvs/" class="text-light"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/cummins-aicvs/mycompany/" class="text-light"><i class="fab fa-linkedin"></i></a>
+    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZfSZGZDtVjPdkFkJqCQJXMjjcqxVrGvJffFvBTRKNPGcmXMlQxctgbpgdCrfKFfjsJCHL" class="text-light"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+    <a href="https://www.twitter.com/aicvs" class="text-light"><i class="fab fa-twitter"></i></a>
+    <a href="https://youtube.com/channel/UCYkmq4s5ciIau6BFI97XJlA" class="text-light"><i class="fab fa-youtube"></i></a>
+  </div>
+</footer>
+<script src="contact.js"></script>
+</body>
+<!-- scrpit -->
+
+
+
+</html>
