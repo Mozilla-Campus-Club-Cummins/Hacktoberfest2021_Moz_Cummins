@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<title>Mozilla Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" >
+  <!--<div class="w3-bar w3-white w3-card" id="myNavbar">-->
+    <div class="navbar">
+     <div href="#home" class="w3-bar-item w3-button w3-wide" ></div>
+     <!-- Right-sided navbar links -->
+     <img src="/images/logo.jpg" alt="Table Setting" width="150px" height="38px"></a><div class="w3-right w3-hide-small">
+       <a href="home.html" class="w3-bar-item w3-button"><i class="fas fa-eject"></i> ABOUT US</a>
+       <a href="activity.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ACTIVITIES</a>
+       <a href="schedule.html" class="w3-bar-item w3-button"><i class="fas fa-calendar-alt"></i> SCHEDULE</a>
+       <a href="contact.html" class="w3-bar-item w3-button"><i class="fas fa-id-card"></i> CONTACT US</a>
+     </div>
+     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+ 
+     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+       <i class="fa fa-bars"></i>
+     </a>
+   </div>
+ </div>
+ 
+ <!-- Sidebar on small screens when clicking the menu icon -->
+ <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+   <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+   <a href="activity.html" onclick="w3_close()" class="w3-bar-item w3-button">ACTIVITIES</a>
+   <a href="schedule.html" onclick="w3_close()" class="w3-bar-item w3-button">SCHEDULE</a>
+   <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+ </nav>
+ 
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home" >
+ 
+  <div class="w3-display-left w3-text-white" style="padding:48px" >
+    <span class="heading"><strong>Welcome to</strong> </span><br>
+    <span class="heading"><strong>Mozilla Campus Club CCEW</strong> </span><br>
+    <span class="heading1">LEARN,TEACH AND BUILD</span><br>
+    <span class="heading1">Deep Dive into the new world of </span><br>
+    <span class="heading1">Open Source Contribution</span><br>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p>
+  </div> 
+  
+</header>
+
+<!-- About Section -->
+
+
+<div class="w3-row w3-padding-64" id="about" style="background-color:#2196F3 ">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="/images/open 1.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="1000" height="950">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center"><strong>What is Mozilla?</strong></h1><br>
+   <p class="w3-large">Mozilla is an open and free software community that was founded in 1988. It was established by the Mozilla Foundation, a non-profit organization that promotes open source contributions and collaboration, innovation, and creativity worldwide. The community thus supports the usage and development of Mozilla products thereby exclusively promoting free software and open standards, with minor exceptions.</p> 
+      <p class="w3-large">The most widely known product is the Firefox browser which is available on desktops and mobiles. The browser is open source and privacy-focused. Other products of the Mozilla community include <strong>Firefox Focus, Mozilla VPN, Firefox OS</strong> and many other products which are based on the open source principle.</p>
+  </div>
+</div>
+
+
+
+<div class="w3-row w3-padding-64" id="menu"  >
+  <div class="w3-col l6 w3-padding-large" > 
+    
+    <h1 class="w3-center"><strong>What is Open Source?</strong></h1><br>
+    
+    <p class="w3-large">Open Source refers to the software where the source code is made available to everyone so that it can be modified. The aim behind this is to give access to everyone to inspect, modify and enhance the code. If a programmer finds some part which is not working correctly, that part can be fixed by them.</p> 
+       <p class="w3-large">The ones who help by contributing to the software are known as contributors. This contribution does not only have technical aspects, but the contribution can also be non-technical. Open source software is often more cheap and flexible. Open source is a new way to solve problems faced by the community.  <strong> Linux OS, VLC Media player, Open office </strong>  are some examples of open source software. </p>
+  </div>
+  
+  <div class="w3-col l6 w3-padding-large">
+    <img src="/images/open 2.png" class="w3-round w3-image w3-opacity-min" alt="Menu"  width="1000" height="1000" >
+    
+  </div>
+</div>
+
+
+<div class="w3-row w3-padding-64" id="about" style="background-color:#2196F3 ;">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="/images/open 3.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="800" height="1050">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center"><strong>What do we do at the Mozilla Campus Club?</strong></h1><br>
+    <p class="w3-large">The Mozilla Campus Club of CCEW was formed with the aim of promoting the idea of open source among aspiring students and encouraging them to make the most of the opportunities that come along with it. Along with staying connected via social media platforms and running a blog on open source development, various events are organized for promoting the idea of open source among the students.</p> 
+       <p class="w3-large">We have successfully conducted webinars with notable speakers and demonstrative sessions about platforms like GitHub. Furthermore, the club provides everyone with a platform to participate in prominent competitions like <strong>Hacktoberfest</strong>  and many more.</p>
+    
+  </div>
+</div>
+
+
+    
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64" >
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Sessions
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Registrations
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Contributions
+  </div>
+</div>
+
+<!-- Work Section
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div>
+ -->
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="home.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.instagram.com/aicvs/" class="text-light"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/cummins-aicvs/mycompany/" class="text-light"><i class="fab fa-linkedin"></i></a>
+    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZfSZGZDtVjPdkFkJqCQJXMjjcqxVrGvJffFvBTRKNPGcmXMlQxctgbpgdCrfKFfjsJCHL" class="text-light"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+    <a href="https://www.twitter.com/aicvs" class="text-light"><i class="fab fa-twitter"></i></a>
+    <a href="https://youtube.com/channel/UCYkmq4s5ciIau6BFI97XJlA" class="text-light"><i class="fab fa-youtube"></i></a>
+  </div>
+</footer>
+ 
+ 
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
