@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+class checkPal
+{ public int count;
+ 
+
+ int substring(String X,int k)
+{
+  int sum=0; //initializing sum to zero
+  if (X.length()==0) //empty string
+      return 0;
+  for(int gap=0;gap<X.length();gap++)  //adjust length of string
+{   int n=0; //setting counter of number of substrings of length to zero
+    char str[]=X.toCharArray(); //creating array of characters in string
+    
+    for(int i=0;i<X.length()-gap;i++) //first letter of palindrome
+   { count=0; //initializing counter for number of letters to be changed to 0
+     int j=i+gap; //last letter of palindrome
+     if(isKPalindrome(i,j,str,k)==1)
+          n++; //increment counter if substring is a palindrome
+   }
+    
+    sum=(gap+1)*n+sum; //calculate sum
+ }
+  return sum; 
+}
+ int isKPalindrome(int i,int j,char str[],int k)
+{
+  if(i>=j) //entire string is checked, break condition
+  { 
+     if(count<=k) //if number of letters to be changed is less than k number
+     {   
+       return 1;
+     }
+    else
+      return 0;
+  }
+ if(str[i]!=str[j]) //if letters are unequal 
+     count++; //increment counter
+ return(isKPalindrome(i+1,j-1,str,k)); 
+}
+}
+public class Main
+{
+   public static void main(String[] args)
+{  int T;
+   checkPal obj=new checkPal(); //object of class checkPal
+   Scanner sc= new Scanner(System.in);
+   String s; 
+   int k,N;
+   System.out.println("T=number of test cases\nN=number of letters in string\nValue of K");
+   System.out.println("Constraints:\n1 ≤ T ≤ 5\n1 ≤ N ≤ 105\n0 ≤ K ≤ 5");
+   System.out.println("Enter number of test cases");
+   T=sc.nextInt(); //getting number of text cases
+   int result[]=new int[T]; //array to store results of test cases
+   System.out.println("Enter N, a K number and Enter a string all separated by single space"); 
+   for(int i=0;i<T;i++)
+   {
+   
+   N=sc.nextInt(); //getting string length
+   k=sc.nextInt(); //getting k number
+   s=sc.next();   //getting string
+   result[i]=obj.substring(s,k); //storing result of corresponding case
+   }
+   for(int i=0;i<T;i++)
+   { System.out.println(result[i]); } //print result 
+   
+}
+}
