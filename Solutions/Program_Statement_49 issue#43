@@ -1,0 +1,118 @@
+import java.io.*;
+import java.util.*;
+
+class subarray
+{ static boolean arr[][][];
+  static Vector<Integer> v=new Vector<>();
+  static int original[];
+  static int total_size;
+  
+  static boolean possible(int index,int curr_sum,int curr_size)
+  {  //base cases
+     if(curr_size==0)
+        return(curr_sum==0);
+     if(index>=total_size)
+        return false;
+     //if current sum can't be found for current size   
+     if(arr[index][curr_sum][curr_size]==false)
+        return false;
+     if(curr_sum>=original[index])
+     {  
+         v.add(original[index]); //add element at index into Vector
+         //check if it leads to a possible solution
+         if(possible(index+1,curr_sum-original[index],curr_size-1))
+            return true;
+         v.remove(v.size()-1); //remove last element from vector
+    }
+    
+     //check if not taking this element at index leads to a solution
+     if (possible(index + 1, curr_sum, curr_size))
+            return true;
+ 
+     // If no solution has been found
+     return arr[index][curr_sum][curr_size] = false;
+  }
+ //Function to find if arrays with equal average exist
+  static Vector<Vector<Integer>> partition(int[] Vec)
+ {  //Sort the input array
+    Arrays.sort(Vec);
+    original=Vec; //Store input array in original
+    v.clear(); //clear Vector
+    
+    int total_sum = 0;
+    total_size = Vec.length;
+    
+    //find sum of all elements in array
+    for (int i = 0; i < total_size; ++i)
+        total_sum += Vec[i];
+    
+    arr = new boolean[original.length][total_sum + 1][total_size];
+    //setting all elements of array initiallu to true
+    for (int i = 0; i < original.length; i++)
+        for (int j = 0; j < total_sum + 1; j++)
+            for (int k = 0; k < total_size; k++)
+                arr[i][j][k] = true;
+                
+    
+    
+    for(int i=1;i<total_size;i++)
+    {   
+        //pruning
+        if ((total_sum * i) % total_size != 0)
+           continue; //find all possible values of i for which remainder is 0
+        int Sum_of_Set1 = (total_sum * i) / total_size;
+        
+        //use a recursive function to find an array that matches our conditions
+        if(possible(0,Sum_of_Set1,i))
+        
+        {  //find out the elements in input array not in vector vector
+            int ptr1 = 0, ptr2 = 0; //set both ptr to zero
+           Vector<Integer> v1 = v; //set1
+           Vector<Integer> v2 = new Vector<>(); //set2
+            while(ptr1<Vec.length || ptr2<v.size())
+            {  if (ptr2 < v.size() && v.elementAt(ptr2) == Vec[ptr1])
+               {   ptr1++;
+                   ptr2++;
+                   continue; //if element is present in set1, increment ptr
+               }
+                v2.add(Vec[ptr1]); //if element is not present in set1, add to set2
+                ptr1++; //increment ptr
+            }
+            Vector<Vector<Integer>> ans = new Vector<>();
+            ans.add(v1);
+            ans.add(v2);
+            return ans;
+        }
+    }
+ // If we havent found any such subset.
+ Vector<Vector<Integer>> ans = new Vector<>();
+ return ans;
+     
+  }
+}
+
+
+public class Main
+  { 
+    public static void main(String[] args)
+    {
+       Scanner sc= new Scanner(System.in);
+       System.out.println("Enter size of array");
+       int n=sc.nextInt();
+       int Vec[]=new int[n];
+       System.out.println("Enter elements of the array");
+       for(int i=0;i<n;i++) //getting elements of array
+       {
+          Vec[i]=sc.nextInt();
+       }
+       
+      subarray obj= new subarray();
+      Vector<Vector<Integer>> sol = subarray.partition(Vec); 
+ 
+        // If partition possible
+        if (sol.size() > 0) //if subarrays exist, size will be greater than zero
+            System.out.println("True");
+        else
+            System.out.println("False");
+    }   
+  }
