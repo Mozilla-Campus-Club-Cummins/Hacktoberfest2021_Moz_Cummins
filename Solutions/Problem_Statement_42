@@ -1,0 +1,43 @@
+// solution for problem statement_42 #47
+#include <stdio.h>
+int main()
+{
+    int a[10][10],n,m,search,b;
+    printf("Please enter rows and columns in matrix\n");
+    scanf("%d %d",&n,&m);
+    
+    printf("Enter %d elements in matrix\n",(n*m));
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<m;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("Entered matix\n");
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<m;j++)
+        {
+            printf("%d  ",a[i][j]);
+        }
+        printf("\n");
+    }
+    
+    printf("Enter elements to be search\n");
+    scanf("%d",&search);
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<m;j++)
+        {
+            if(search == a[i][j])
+            b++;
+        }
+    }
+    printf("Output of searching process\n");
+    if(b != 1)
+    printf("0");
+    else
+    printf("1");
+    return 0;
+}
